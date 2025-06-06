@@ -1,125 +1,124 @@
 /* General Reset & Typography */
 * {
-    margin: 0;
-    padding: 0;
-    /* 1. ensure that width and height of elemnets include it's padding and border - 1 mark */ 
-  }
+  margin: 0;
+  padding: 0;
+  /* 1. Adjust box-sizing so element dimensions include padding and borders (1 mark) */
+}
 
-  html {
-    font-size: 62.5%; 
-  }
-  
-  body {
-    /* 2. add a custom web font - 2 marks */ 
-    color: #222;
-    line-height: 1.6;
-  }
-  
-  /* Navigation */
-  nav {
-    /* 3. create a sticky navbar 2 marks */ 
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav .logo {
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
-  
-  nav ul {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-  }
-  
-  /* 4. style the nav links - 2 marks */ 
- 
+html {
+  font-size: 62.5%; /* Helps simplify rem calculations */
+}
 
-  /* Hero Section */
-  .hero {
-    /*  5. add a background image  - 2 marks */ 
-    color: white;
-    text-align: center;
-    padding: 6rem 2rem;
-  }
-  
-  .hero h1 {
-    /* 6.  set font size equivalent to 25px using an appropriate unit of measurement - 1 mark */ 
-    font-weight: 700;
-  }
-  
-  .hero p {
-    margin-top: 1rem;
-    font-size: 1.25rem; /* 7. set font size equivalent to 20px using a appropriate unit of measurement - 1 marks*/ 
-  }
-  
-  /* Section Base */
-  section {
-    padding: 4rem 2rem;
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-  /* Services */
-  #services h2 {
-    font-size: 3.2rem; 
-    margin-bottom: 2rem;
-    text-transform: uppercase;/* 8. transform text to upercase  - 1 mark */ 
-    color: #1f2937;
-  }
-  
-  .card {
-    background: #f9f9f9;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  }
-  
-  .badge {
+body {
+  /* 2. Apply a custom web font (e.g., from a web font service) (2 marks) */
+  color: #222;
+  line-height: 1.6;
+}
 
-    /* 9. position the badge overlapping the .card div, 1 rem from the top and 1 rem from the right - 4 marks */ 
-    background: #e63946;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 999px;
-    font-size: 1.2rem; 
-    font-weight: bold;
-  }
-  
-  /* Contact Form */
-  #contact h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    color: #1f2937;
-  }
-  
-  .contact-form {
-    background: #f0f0f0;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    max-width: 600px;
-    margin: auto;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    /* 10. style the form inputs and textarea as shown in the mockup 4 marks */ 
-  }
-  
-  .contact-form button {
-    background: #e63946;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
+/* Navigation */
+nav {
+  /* 3. Make the nav bar stay fixed at the top when scrolling (2 marks) */
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+/* 4. Style the navigation links: spacing, appearance, and various link states (2 marks) */
+
+
+/* Hero Section */
+.hero {
+  /* 5. Add a background image and center it within the element (2 marks) */
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  /* 6. Set the font size to roughly 25px using rem units (1 mark) */
+  font-weight: 700;
+}
+
+.hero p {
+  margin-top: 1rem;
+  /* 7. Set the font size to roughly 20px using rem units (1 mark) */
+}
+
+/* Section Base */
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Services */
+#services h2 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  /* 8. Make the heading text all uppercase (1 mark) */
+  color: #1f2937;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.badge {
+  /* 9. Position this element overlapping the top-right of the .card container (4 marks) */
+  background: #e63946;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Contact Form */
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #1f2937;
+}
+
+.contact-form {
+  background: #f0f0f0;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  /* 10. Apply visual styles based on the form mockup provided (4 marks) */
+}
+
+.contact-form button {
+  background: #e63946;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
